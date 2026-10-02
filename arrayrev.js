@@ -1,18 +1,15 @@
-let a = [1,2,3,4,5];
+let a = [1, 2, 3, 4, 5];
 
-let i = 0, j = a.length - 1;
+let i = 0,
+  j = a.length - 1;
 
-while(i<j){
-    let temp = a[j];
-    a[j] = a[i]; 
-    a[i] = temp;
+while (i < j) {
+  let temp = a[j];
+  a[j] = a[i];
+  a[i] = temp;
 
-    i++
-    j--;
+  i++;
+  j--;
 }
 
-
-
 console.log(a);
-
-

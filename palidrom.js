@@ -1,8 +1,8 @@
 let num = 123;
 let temp = num;
 let pali = 0;
- while(temp != 0){
-    /*
+while (temp != 0) {
+  /*
         121
            rem = 121%10 = 1
            temp = 121/10 = 12
@@ -21,16 +21,13 @@ let pali = 0;
 
            
     */
-   let rem = temp%10; 
-   
-   
-   pali = pali*10 + rem;
-   temp = Math.floor(temp/10);
+  let rem = temp % 10;
 
-   console.log(rem+" "+ pali+ " " + temp);
- }
+  pali = pali * 10 + rem;
+  temp = Math.floor(temp / 10);
 
- if(pali == num)
-    console.log("palidrome")
-else
-    console.log("non palidrome")
+  console.log(rem + " " + pali + " " + temp);
+}
+
+if (pali == num) console.log("palidrome");
+else console.log("non palidrome");
